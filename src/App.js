@@ -135,7 +135,7 @@ function App() {
 
       // API CALL
       const res = await axios.post(
-        "http://localhost:5003/api/content",
+        "https://ai-chatbot-backend-3g6d.onrender.com",
         {
           question: message,
           history: formattedHistory,
