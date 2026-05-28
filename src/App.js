@@ -134,13 +134,13 @@ function App() {
 
 
       // API CALL
-      const res = await axios.post(
-        "https://ai-chatbot-backend-3g6d.onrender.com",
-        {
-          question: message,
-          history: formattedHistory,
-        }
-      );
+     const res = await axios.post(
+  "https://ai-chatbot-backend-3g6d.onrender.com/api/content",
+  {
+    question: message,
+    history: formattedHistory,
+  }
+);
 
 
       // ADD AI RESPONSE
